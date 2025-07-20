@@ -1,0 +1,9 @@
+@use '../forwarder' as *;
+
+.wrapper footer{
+    position: relative;
+    
+    span{
+        font-size: 13px;
+    }
+}

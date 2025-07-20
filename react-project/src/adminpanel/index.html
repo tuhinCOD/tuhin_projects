@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/custom/scss/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="topbar text-light" style="box-shadow: 0px 0px 2px #fff;">
+                <div class="logo-lg p-2 pt-3">
+                    <i class="bi bi-ui-radios-grid px-2"></i>
+                    <b class="fs-5">Fashion Design</b>
+                </div>
+                <div class="logo-sm pt-3">
+                    <b class="fs-5 ps-2">FD</b>
+                </div>
+            </div><!--topbar-->
+            <div class="add-new bg-light my-4">
+                <a href="#" class=" d-flex text-decoration-none py-2">
+                    <div class="sidebar-icon">
+                        <i class="bi bi-plus-circle my-auto text-dark"></i>
+                    </div>
+                    <div class="sidetoggle">
+                        <span class="ps-2 text-dark">Create new project</span>
+                    </div>
+                </a>
+            </div><!--add-new-->
+            <div class="sidebar-list accordion" id="accordion">
+                <ul class="list-unstyled" id="accordion">
+                    <li class="active mb-1">
+                        <a href="#" class="nav-link text-decoration-none text-light d-flex align-items-center">
+                            <div class="sidebar-icon">
+                                <i class="bi bi-grid"></i>
+                            </div>
+                            <div class="sidetoggle">
+                                <span class="ps-2">Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mb-1">
+                        <a href="#" class="nav-link text-decoration-none text-light d-flex align-items-center collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" data-show="onoff">
+                            <div class="sidebar-icon">
+                                <i class="bi bi-briefcase"></i>
+                            </div>
+                            <div class="sidetoggle">
+                                <span class="ps-2">Project</span>
+                            </div>
+                        </a>
+                        <ul class="list-group accordion-collapse collapse pt-2" id="collapseOne"  data-bs-parent="#accordion">
+                            <li class="list-group-item border-none" style="border-top-left-radius: 0px; border-top-right-radius: 0px;">
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 1</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-none">
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 2</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-none text-light" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+                                <a href="#" class=" d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 3</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mb-1" >
+                        <a href="#" class="text-decoration-none text-light d-flex align-items-center collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-show="onoff">
+                            <div class="sidebar-icon">
+                                <i class="bi bi-list-check"></i>
+                            </div>
+                            <div class="sidetoggle">
+                                <span class="ps-2">Tasks</span>
+                            </div>
+                        </a>
+                        <ul class="list-group accordion-collapse collapse pt-2" id="collapseTwo"  data-bs-parent="#sidebarAccordion">
+                            <li class="list-group-item border-none" style="border-top-left-radius: 0px; border-top-right-radius: 0px;">
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 1</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-none">
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 2</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-none text-light" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+                                <a href="#" class=" d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 3</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="mb-1">
+                        <a href="#" class="text-decoration-none text-light d-flex align-items-center collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-show="onoff">
+                            <div class="sidebar-icon">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <div class="sidetoggle">
+                                <span class="ps-2">Time log</span>
+                            </div>
+                        </a>
+                        <ul class="list-group accordion-collapse collapse pt-2" id="collapseThree"  data-bs-parent="#sidebarAccordion">
+                            <li class="list-group-item border-none" style="border-top-left-radius: 0px; border-top-right-radius: 0px;">
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 1</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-none text-light" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+                                <a href="#" class=" d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 2</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mb-1">
+                        <a href="#" class="text-decoration-none text-light d-flex align-items-center collapsed"  role="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" data-show="onoff">
+                            <div class="sidebar-icon">
+                                <i class="bi bi-diagram-3"></i>
+                            </div>
+                            <div class="sidetoggle">
+                                <span class="ps-2">Resource mgnt</span>
+                            </div>
+                        </a>
+                        <ul class="list-group accordion-collapse collapse pt-2" id="collapseFour"  data-bs-parent="#sidebarAccordion">
+                            <li class="list-group-item border-none" style="border-top-left-radius: 0px; border-top-right-radius: 0px;">
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 1</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-none">
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 2</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-none text-light" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+                                <a href="#" class=" d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 3</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mb-1">
+                        <a href="#" class="text-decoration-none text-light d-flex align-items-center collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" data-show="onoff">
+                            <div class="sidebar-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <div class="sidetoggle">
+                                <span class="ps-2">Users</span>
+                            </div>
+                        </a>
+                        <ul class="list-group accordion-collapse collapse pt-2" id="collapseFive"  data-bs-parent="#sidebarAccordion">
+                            <li class="list-group-item border-none" style="border-top-left-radius: 0px; border-top-right-radius: 0px;">
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 1</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-none">
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 2</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-none text-light" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+                                <a href="#" class=" d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 3</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mb-1">
+                        <a href="#" class="text-decoration-none text-light d-flex align-items-center collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" data-show="onoff">
+                            <div class="sidebar-icon">
+                                <i class="bi bi-layers"></i>
+                            </div>
+                            <div class="sidetoggle">
+                                <span class="ps-2">Project Tamplate</span>
+                            </div>
+                        </a>
+                        <ul class="list-group accordion-collapse collapse pt-2" id="collapseSix"  data-bs-parent="#sidebarAccordion">
+                            <li class="list-group-item border-none" style="border-top-left-radius: 0px; border-top-right-radius: 0px;">
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 1</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-none">
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 2</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-none text-light" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+                                <a href="#" class=" d-flex text-decoration-none">
+                                    <span class="me-auto ms-3">Sub menu 3</span>
+                                    <span><i class="bi bi-dot"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mb-1">
+                        <a href="#" class="text-decoration-none text-light d-flex align-items-center">
+                            <div class="sidebar-icon">
+                                <i class="bi bi-gear-wide"></i>
+                            </div>
+                            <div class="sidetoggle">
+                                <span class="ps-2">Menu Setting</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div><!--sidebar-->
+
+        <div class="mainbody">
+            <header class="d-flex">
+                <button data-toggle="on-canvas" class="btn btn-light rounded-0 my-auto py-2 h-100 ms-1">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="logo py-3 px-4">
+                    <h4>Dashboard</h4>
+                </div>
+                <div class="header-icon py-3 ms-auto pe-2 d-flex">
+                    <i class="bi bi-bell"></i>
+                </div>
+                <div class="header-id d-flex py-3 pe-4 dropdown">
+                    <a href="#" class="nav-link dropdown-toggle rounded-pill bg-secondary d-flex text-decoration-none text-light dropdown" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./assets/images/420071886_902891291547980_1983454370808855991_n.jpg" class="p-2 d-block" alt="">
+                        <div class="detail p-2">
+                            <p><b>Tuhin</b></p>
+                            <p class="m-0">Developer</p>
+                        </div>
+                        <i class="bi bi-chevron-down p-2"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end me-2 py-0 fz-1" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item d-flex align-items-center ps-0 py-1" href="#">
+                            <div class="menu-icon d-flex justify-content-center w-25">
+                            <i class="bi bi-person"></i>
+                            </div>
+                            <div class="ps-2">Profile</div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center ps-0 py-1" href="#">
+                            <div class="menu-icon d-flex justify-content-center w-25">
+                            <i class="bi bi-pencil-square"></i>
+                            </div>
+                            <div class="ps-2">Edit profile</div>
+                        </a>
+                        <div class="dropdown-divider my-0"></div>
+                        <a class="dropdown-item d-flex align-items-center ps-0 py-1" href="#">
+                            <div class="menu-icon d-flex justify-content-center w-25">
+                            <i class="bi bi-power"></i>
+                            </div>
+                            <div class="ps-2">Logout</div>
+                        </a>
+                        </div>
+                </div>
+            </header>
+
+            <div class="content"></div>
+            <footer class="p-2 d-flex align-items-center justify-content-between border-top">
+                <span>Made by <a href="#">Tuhin</a></span>
+                <span>Version 1.0.0</span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>   
+    <script src="./assets/custom/castom.js"></script> 
+</body>
+</html>

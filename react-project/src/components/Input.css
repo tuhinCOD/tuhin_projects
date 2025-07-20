@@ -1,0 +1,7 @@
+.must::after{
+    content: "*";
+    position: absolute;
+    top: 5px;
+    right: -7.5px;
+    color: red;
+}

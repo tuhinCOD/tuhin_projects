@@ -1,0 +1,12 @@
+@use "../forwarder" as *;
+
+.mainbody{
+    position: relative;
+    width: calc(100% - $sidebar);
+    height: 100%;
+    flex-shrink: 0;
+    left: $sidebar;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all ease-in-out .2s;
+}
