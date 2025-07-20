@@ -1,0 +1,18 @@
+@use "./variable" as *;
+
+@each $k, $v in $colors{
+    .bg-#{$k}{
+        background: $v;
+    }
+};
+
+@each $k, $v in $colors{
+    .btn-#{$k}{
+        background: $v;
+        
+        &:hover{
+            background: lighten($color: $v, $amount: 10%);
+            border: lighten($color: $v, $amount: 10%);
+        }
+    }
+};

@@ -1,0 +1,29 @@
+@use "./variable" as *;
+
+.border{
+    border: 2px solid $secondary;
+}
+
+@for $i from 0 through 5{
+    .border-#{$i}{
+        border-width: $i+px;
+    }
+}
+
+@each $k, $v in $colors{
+    .border-#{$k}{
+        border: 2px solid $v;
+    }
+};
+
+@each $k, $v in $borderStyle{
+    .border-#{$k}{
+        border-style: #{$v};
+    }
+};
+
+@each $k, $v in $borderEdge{
+    .#{$k}{
+        #{$k}: 2px solid $secondary;
+    }
+};

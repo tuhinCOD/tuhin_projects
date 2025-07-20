@@ -1,0 +1,58 @@
+@use "../forwarder" as *;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    margin: 0;
+}
+.wrapper{
+    height: 100%;
+    position: relative;
+}
+
+.off-canvas{
+    .sidebar{
+        left: - ($sidebar) !important;
+        transition: all ease-in-out .3s;
+    }
+
+    .mainbody{
+        width: 100% !important;
+        left: 0 !important;
+        transition: all ease-in-out .3s;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 970px) {
+  .wrapper:not(.off-canvas) .sidebar {
+    width: 46px !important;
+    overflow: hidden;
+  }
+  .wrapper:not(.off-canvas) .sidetoggle span,
+//   .wrapper:not(.off-canvas) .logo-lg,
+  .wrapper:not(.off-canvas) .add-new span {
+    display: none !important;
+  }
+  
+  .off-canvas .sidebar {
+    width: 220px !important;
+    left: 0px !important;
+  }
+  .wrapper.off-canvas .sidetoggle span,
+  .wrapper.off-canvas .logo b,
+  .wrapper.off-canvas .add-new span {
+    display: inline-block !important;
+  }
+  
+  .wrapper:not(.off-canvas) .mainbody {
+    width: calc(100% - 46px) !important;
+    left: 46px !important;
+  }
+  .wrapper.off-canvas .mainbody {
+    width: calc(100% - 220px) !important;
+    left: 220px !important;
+  }
+}

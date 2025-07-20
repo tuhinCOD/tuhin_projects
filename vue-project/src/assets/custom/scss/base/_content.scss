@@ -1,0 +1,7 @@
+@use "../forwarder" as *;
+
+.mainbody .content{
+    position: relative;
+    min-height: calc(100% - 30px);
+    padding-top: 70px;
+}

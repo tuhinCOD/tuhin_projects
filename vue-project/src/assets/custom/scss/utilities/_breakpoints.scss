@@ -1,0 +1,27 @@
+@use "./variable" as *;
+
+@mixin bp-min ($break) {
+    @if map-has-key($map: $breakPoints, $key: $break){
+        @media (min-width: map-get($map: $breakPoints, $key: $break)){
+            @content;
+        }
+    }
+};
+
+@mixin bp-max ($break) {
+    @if map-has-key($map: $breakPoints, $key: $break){
+        @media (max-width: (map-get($map: $breakPoints, $key: $break) - 0.02px)){
+            @content;
+        }
+    }
+};
+
+@mixin bp-only ($lower, $higher) {
+    @if map-has-key($map: $breakPoints, $key: $lower) and map-has-key($map: $breakPoints, $key: $higher){
+        $lo: map-get($map: $breakPoints, $key: $lower);
+        $high: map-get($map: $breakPoints, $key: $higher) - 0.02px;
+        @media (min-width: $lo) and (max-width: $high){
+            @content;
+        }
+    }
+};

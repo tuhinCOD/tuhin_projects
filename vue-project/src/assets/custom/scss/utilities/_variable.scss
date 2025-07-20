@@ -1,0 +1,81 @@
+//colors
+
+$primary: #0D6EFD;
+$light: #F8F9FA;
+$dark: #212529;
+$success: #198754;
+$danger: #DC3545;
+$warning: #FFC107;
+$info: #0DCAF0;
+$secondary: #343A40;
+
+$colors: (
+    "primary": $primary,
+    "light": $light,
+    "dark": $dark,
+    "success": $success,
+    "danger": $danger,
+    "warning": $warning,
+    "info": $info,
+    "secondary": $secondary
+)!default;
+
+// breakpoints
+
+$xs: o;
+$sm: 576px;
+$md: 768px;
+$lg: 970px;
+$xl: 1200px;
+$xxl: 1400px;
+
+$breakpoints: (
+    $xs: $xs,
+    $sm: $sm,
+    $md: $md,
+    $lg: $lg,
+    $xl: $xl,
+    $xxl: $xxl
+) !default;
+
+// border style
+
+$dotted: "dotted";
+$dashed: "dashed";
+$solid: "solid";
+$double: "double";
+$groove: "groove";
+$ridge: "ridge";
+$inset: "inset";
+$outset: "outset";
+$none: "none";
+$hidden: "hidden";
+
+$borderStyle :(
+    "dotted": $dotted,
+    "dashed": $dashed,
+    "solid": $solid,
+    "double": $double,
+    "groove": $groove,
+    "ridge": $ridge,
+    "inset": $inset,
+    "outset": $outset,
+    "none": $none,
+    "hidden": $hidden
+)!default;
+
+// border edge
+
+$borderLeft: "border-left";
+$borderRight: "border-right";
+$borderTop: "border-top";
+$borderBottom: "border-bottom";
+
+$borderEdge: (
+    "border-left": $borderLeft,
+    "border-right": $borderRight,
+    "border-top": $borderTop,
+    "border-bottom": $borderBottom
+)!default;
+
+$sidebar: 220px;
